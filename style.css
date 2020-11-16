@@ -13,8 +13,8 @@ body{
 
 /* Spinner start */
 .spinner {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     position: relative;
 }
 
@@ -26,17 +26,24 @@ body{
     border: 10px solid transparent;
     border-top-color: #f6931e;
     border-radius: 50%;
-    animation: spinnerOne 1.2s infinite linear
+    animation: spinnerOne 1s infinite linear;
 }
 
 .spinner div:nth-child(2) {
     border: 10px solid transparent;
     border-bottom-color: #f6931e;
+    animation: spinnerTwo 1s infinite linear;
 }
 
 @keyframes spinnerOne {
     0% { transform: rotate(0deg); border-width: 10px;}
     50% { transform: rotate(180deg); border-width: 1px;}
     100% { transform: rotate(360deg); border-width: 10px;}
+}
+
+@keyframes spinnerTwo {
+    0% { transform: rotate(0deg); border-width: 1px;}
+    50% { transform: rotate(180deg); border-width: 10px;}
+    100% { transform: rotate(360deg); border-width: 1px;}
 }
 /* Spinner end */
