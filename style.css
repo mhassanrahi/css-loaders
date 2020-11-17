@@ -47,3 +47,13 @@ body{
     100% { transform: rotate(360deg); border-width: 1px;}
 }
 /* Spinner end */
+
+/* Bouncer start */
+.bouncer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 150px;
+    height: 150px;
+}
+/* Bouncer end */
