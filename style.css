@@ -87,3 +87,33 @@ body{
     to { transform: translateY(-150px)}
 }
 /* Bouncer end */
+
+/* Squares Start */
+
+.square {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    perspective: 200px;
+}
+
+.square div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: coral;
+    top: 0;
+    animation: flip 2s linear infinite;
+    transform-origin: right bottom;
+}
+
+@keyframes flip {
+    0% { transform: rotateX(0) rotateY(0)}
+    25% { transform: rotateX(0) rotateY(180deg)}
+    50% { transform: rotateX(180deg) rotateY(180deg)}
+    75% { transform: rotateX(180deg) rotateY(0)}
+    100% { transform: rotateX(0) rotateY(0)}
+}
+
+
+/* Squares End */
